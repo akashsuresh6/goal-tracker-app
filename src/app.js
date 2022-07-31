@@ -27,7 +27,7 @@ app.use(express.json());
 app.use("/api/users", userRoute);
 
 app.get("/", (req, res) => {
-    res.json({ msg: "Welcome to Goal Tracker API"});
+    res.json({ msg: "Welcome Goal Tracker API"});
 });
 
 //Error
