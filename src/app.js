@@ -26,6 +26,10 @@ app.use(express.json());
 //routes admin ynte aan later comment
 app.use("/api/users", userRoute);
 
+app.get("/", (req, res) => {
+    res.json({ msg: "Welcome to Goal Tracker API"});
+});
+
 //Error
 app.use(notFound);
 app.use(errorHandler);
